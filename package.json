@@ -1,0 +1,44 @@
+{
+  "name": "remember-last-method-plugin",
+  "version": "0.0.1",
+  "description": "Better Auth plugin to remember the last authentication method used by the user.",
+  "zshy": "./src/index.ts",
+  "scripts": {
+    "build": "zshy",
+    "lint": "biome lint",
+    "check": "biome check",
+    "format": "biome format --write",
+    "check:write": "biome check --write"
+  },
+  "keywords": [
+    "better-auth",
+    "plugin",
+    "remember-last-method-plugin"
+  ],
+  "author": "miki-tebe",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.0",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "@types/node": "^24.3.0",
+    "better-auth": "^1.3.7",
+    "typescript": "^5.9.2",
+    "zshy": "^0.3.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "peerDependencies": {
+    "better-auth": "^1.3.7"
+  }
+}
