@@ -4,7 +4,7 @@ This plugin allows you to remember the last authentication provider a user selec
 
 ## Installation
 
-You can install the plugin using `pnpm`, `npm`, or `yarn`.
+You can install the plugin using `pnpm`, `npm`, `yarn`, or `bun`.
 
 ```
 npm i remember-last-method-plugin
@@ -36,7 +36,7 @@ When a user selects an authentication provider (e.g., clicks a login/sign-up but
 await authClient.saveProvider("email");
 ```
 
-Replace `"google"` with the provider's name (e.g., `"github"`, `"email"`, etc.).
+Replace `"email"` with the provider's name (e.g., `"github"`, `"google"`, etc.).
 
 ### 3. Retrieving the Last Used Provider
 
